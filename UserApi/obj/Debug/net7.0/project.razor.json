@@ -13,7 +13,7 @@
     "TagHelpers": [],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "foods_connected_brien",
+  "RootNamespace": "UserApi",
   "Documents": [
     {
       "FilePath": "/Users/brienhall/Documents/foods-connected-brien/Pages/_ViewImports.cshtml",

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace foods_connected_brien.Pages;
+namespace UserApi.Pages;
 
 public class PrivacyModel : PageModel
 {
