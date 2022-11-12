@@ -3,7 +3,7 @@ using TodoApi.Models;
 namespace UserApi.ProgramMain;
 public class Program
 {
-
+    
     public static WebApplication create(String[]? args) {
         
         Console.WriteLine("############ ",args.ToString());
@@ -11,8 +11,7 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddControllers();
-        builder.Services.AddDbContext<UserContext>(opt =>
-            opt.UseInMemoryDatabase("TodoList"));
+        builder.Services.AddDbContext<EmployeeContext>();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 

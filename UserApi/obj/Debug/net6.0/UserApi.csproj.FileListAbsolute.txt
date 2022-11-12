@@ -302,3 +302,7 @@
 /Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/UserApi.pdb
 /Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/UserApi.genruntimeconfig.cache
 /Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/ref/UserApi.dll
+/Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/System.Net.Http.Formatting.dll
+/Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/System.Web.Http.dll
+/Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/System.Web.Http.WebHost.dll
+/Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
