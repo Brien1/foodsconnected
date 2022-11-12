@@ -379,3 +379,5 @@
 /Users/brienhall/Documents/foodsconnected/UserApi.Tests/obj/Debug/net6.0/UserApi.Tests.pdb
 /Users/brienhall/Documents/foodsconnected/UserApi.Tests/obj/Debug/net6.0/UserApi.Tests.genruntimeconfig.cache
 /Users/brienhall/Documents/foodsconnected/UserApi.Tests/obj/Debug/net6.0/ref/UserApi.Tests.dll
+/Users/brienhall/Documents/foodsconnected/UserApi.Tests/bin/Debug/net6.0/Castle.Core.dll
+/Users/brienhall/Documents/foodsconnected/UserApi.Tests/bin/Debug/net6.0/Moq.dll

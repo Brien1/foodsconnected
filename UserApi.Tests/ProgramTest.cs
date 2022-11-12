@@ -23,6 +23,7 @@ namespace UserApiTest.UnitTests.Program_Test
         {
 
            Assert.IsTrue(app!=null);
+        
         }
     }
 }
