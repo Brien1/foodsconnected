@@ -18,7 +18,7 @@
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
           "UserApi": "1.0.0",
-          "coverlet.collector": "3.1.2"
+          "coverlet.collector": "3.2.0"
         },
         "runtime": {
           "UserApi.Tests.dll": {}
@@ -35,7 +35,7 @@
           }
         }
       },
-      "coverlet.collector/3.1.2": {},
+      "coverlet.collector/3.2.0": {},
       "Elasticsearch.Net/7.8.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.6.0",
@@ -2708,12 +2708,12 @@
       "path": "castle.core/5.1.0",
       "hashPath": "castle.core.5.1.0.nupkg.sha512"
     },
-    "coverlet.collector/3.1.2": {
+    "coverlet.collector/3.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wuLDIDKD5XMt0A7lE31JPenT7QQwZPFkP5rRpdJeblyXZ9MGLI8rYjvm5fvAKln+2/X+4IxxQDxBtwdrqKNLZw==",
-      "path": "coverlet.collector/3.1.2",
-      "hashPath": "coverlet.collector.3.1.2.nupkg.sha512"
+      "sha512": "sha512-xjY8xBigSeWIYs4I7DgUHqSNoGqnHi7Fv7/7RZD02rvZyG3hlsjnQKiVKVWKgr9kRKgmV+dEfu8KScvysiC0Wg==",
+      "path": "coverlet.collector/3.2.0",
+      "hashPath": "coverlet.collector.3.2.0.nupkg.sha512"
     },
     "Elasticsearch.Net/7.8.1": {
       "type": "package",

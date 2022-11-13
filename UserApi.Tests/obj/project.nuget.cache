@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TEtrpLplRD9OpXrBvdB1s1r1mzLvexQtRpgc1lYKB0gVmmTeymD9ib4qZFQtwcMOeXMIBPx8fq3uaSRXdK3f8Q==",
+  "dgSpecHash": "wdunL/Klt97XXQ6w8vbyJQShE/rx92nrMKeEU0/kIYZTB6LPrArwOCNJnGDg3CfNsbGII4eJQiiBiQ92mgu9kw==",
   "success": true,
   "projectFilePath": "/Users/brienhall/Documents/foodsconnected/UserApi.Tests/UserApi.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/brienhall/.nuget/packages/castle.core/5.1.0/castle.core.5.1.0.nupkg.sha512",
-    "/Users/brienhall/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
+    "/Users/brienhall/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/elasticsearch.net/7.8.1/elasticsearch.net.7.8.1.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
