@@ -11,8 +11,7 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddControllers();
-        builder.Services.AddDbContext<UserContext>(opt =>
-            opt.UseInMemoryDatabase("TodoList"));
+        builder.Services.AddDbContext<UserContext>();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 

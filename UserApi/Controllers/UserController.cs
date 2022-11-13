@@ -15,10 +15,11 @@ namespace foods_connected_brien.Controllers
     {
         private readonly UserContext _context;
 
-        public UserController(UserContext context)
+        public UserController()
         {
-            _context = context;
+            _context = new UserContext();
         }
+       
 
         // GET: api/User
         [HttpGet]
@@ -50,9 +51,7 @@ namespace foods_connected_brien.Controllers
             {
                 return BadRequest();
             }
-
             _context.Entry(user).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -87,8 +86,8 @@ namespace foods_connected_brien.Controllers
 
             else {
                _context.User.Add(user);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction("GetUser", new { id = user.userId }, user);  
+                await _context.SaveChangesAsync();
+                return CreatedAtAction("GetUser", new { id = user.userId }, user);  
             }
            
         }
