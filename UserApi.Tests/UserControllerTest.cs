@@ -29,10 +29,10 @@ namespace UserApiTest.UnitTests.User_Controller_Test
         {
 
             test_user.userId = 1;
-            var resp1 = controller.PostUser(test_user);
-            var resp2 = controller.GetUser(1);
+            var resp_data_insertion = controller.PostUser(test_user);
+            var resp_data_requested = controller.GetUser(1);
 
-            Assert.IsTrue(resp2.Result.Value.username.Equals("brien"));
+            Assert.IsTrue(resp_data_requested.Result.Value.username.Equals("brien"));
 
 
         }
@@ -40,9 +40,9 @@ namespace UserApiTest.UnitTests.User_Controller_Test
         [Test]
         public async Task test_get_set_user_sameNameError()
         {
-            var resp1 = await controller.PostUser(test_user);
-            var resp2 = await controller.PostUser(test_user);
-            var r = resp2.Result.ToString();
+            var resp_data_insertion = await controller.PostUser(test_user);
+            var resp_data_insertion_dubplicate = await controller.PostUser(test_user);
+            var r = resp_data_insertion_dubplicate.Result.ToString();
             Assert.AreEqual("Microsoft.AspNetCore.Mvc.BadRequestObjectResult", r);
 
         }
@@ -53,25 +53,26 @@ namespace UserApiTest.UnitTests.User_Controller_Test
             test_user.userId = 2;
             long userid = test_user.userId;
 
-            var resp1 = await controller.PostUser(test_user);
-            var resp2 = controller.GetUser(userid);
-            Assert.IsTrue(resp2.Result.Value.username.Equals("brien"));
-            User f = resp2.Result.Value;
+            var resp_data_insertion = await controller.PostUser(test_user);
+            var resp_data_requested = controller.GetUser(userid);
+            Assert.IsTrue(resp_data_requested.Result.Value.username.Equals("brien"));
+            User f = resp_data_requested.Result.Value;
             f.username = "Dave";
-            var resp3 = await controller.PutUser(userid, f);
-            var resp4 = controller.GetUser(userid);
-            Assert.IsTrue(resp4.Result.Value.username.Equals("Dave"));
+            var resp_user_updated = await controller.PutUser(userid, f);
+            
+            resp_data_requested = controller.GetUser(userid);
+            Assert.IsTrue(resp_data_requested.Result.Value.username.Equals("Dave"));
 
         }
         [Test]
         public async Task test_deletion()
         { 
-            var resp1 = await controller.PostUser(test_user);
-            var resp2 = controller.GetUser(test_user.userId);
-            Assert.IsTrue(resp2.Result.Value==test_user);
+            var resp_data_insertion = await controller.PostUser(test_user);
+            var resp_data_requested = controller.GetUser(test_user.userId);
+            Assert.IsTrue(resp_data_requested.Result.Value==test_user);
             controller.DeleteUser(test_user.userId);
-            var resp3 = controller.GetUser(test_user.userId);
-            Assert.IsTrue(resp3.Result.Value==null);
+            var resp_data_requested_afterDelete = controller.GetUser(test_user.userId);
+            Assert.IsTrue(resp_data_requested_afterDelete.Result.Value==null);
 
         }
 
