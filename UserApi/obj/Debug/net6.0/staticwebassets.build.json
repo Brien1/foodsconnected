@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lx4bpmAYQZKstuai6Y4gG55LW6P/x4/Y9Omkv76wngY=",
+  "Hash": "V37ZBm3JwGiMXWfY70XrmTQ7YZjPDv01LAgBxAShSXw=",
   "Source": "UserApi",
   "BasePath": "_content/UserApi",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/scopedcss/bundle/UserApi.styles.css",
-      "SourceId": "UserApi",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/scopedcss/bundle/",
-      "BasePath": "_content/UserApi",
-      "RelativePath": "UserApi.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/scopedcss/bundle/UserApi.styles.css"
-    },
-    {
-      "Identity": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/scopedcss/projectbundle/UserApi.bundle.scp.css",
-      "SourceId": "UserApi",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/scopedcss/projectbundle/",
-      "BasePath": "_content/UserApi",
-      "RelativePath": "UserApi.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/scopedcss/projectbundle/UserApi.bundle.scp.css"
-    },
     {
       "Identity": "/Users/brienhall/Documents/foodsconnected/UserApi/wwwroot/css/site.css",
       "SourceId": "UserApi",
