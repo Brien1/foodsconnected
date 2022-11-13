@@ -14,13 +14,11 @@ namespace foods_connected_brien.Controllers
     public class UserController : ControllerBase
     {
         private readonly UserContext _context;
-
         public UserController()
         {
             _context = new UserContext();
         }
-       
-
+        
         // GET: api/User
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUser()
@@ -76,15 +74,15 @@ namespace foods_connected_brien.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {   
-            Console.WriteLine(user.username);
 
             var f = await _context.User.ToListAsync();
-            if (f.Any((e)=>{return e.username.Equals(user.username) ;})){
+            if (f.Any((e)=>{return e.username.Equals(user.username) ;}))
+            {
                 return BadRequest("username exists");
             } 
 
-
-            else {
+            else
+            {
                _context.User.Add(user);
                 await _context.SaveChangesAsync();
                 return CreatedAtAction("GetUser", new { id = user.userId }, user);  

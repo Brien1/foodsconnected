@@ -29,11 +29,8 @@ public class Program
                 options.RoutePrefix = string.Empty;
             });
         }
-
         app.UseHttpsRedirection();
-
         app.UseAuthorization();
-
         app.MapControllers();
         return app;
     }
