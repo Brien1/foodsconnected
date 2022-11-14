@@ -13,6 +13,8 @@ namespace UserApiTest.UnitTests.User_Controller_Test
     {
         private UserController controller;
         private User test_user;
+        private long id_nonexistent_user;
+
         [SetUp]
         public void SetUp()
         {
@@ -20,6 +22,8 @@ namespace UserApiTest.UnitTests.User_Controller_Test
             controller = new UserController();
             test_user = new User();
             test_user.username = "brien";
+            id_nonexistent_user = 1111;
+
         }
         [TearDown]
         public void TearDown() { }
@@ -76,5 +80,20 @@ namespace UserApiTest.UnitTests.User_Controller_Test
 
         }
 
+        [Test]
+        public async Task test_deletion_user_doesnt_exist()
+        {
+                        
+            var resp = controller.DeleteUser(id_nonexistent_user);
+            Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundResult", resp.Result.ToString());
+        }
+        [Test]
+        public async Task test_put_user_wrong_id() {
+           
+            var resp_user_updated = await controller.PutUser(3, test_user);
+            Assert.AreEqual("Microsoft.AspNetCore.Mvc.BadRequestResult",resp_user_updated.ToString());
+
+        }
+     
     }
 }

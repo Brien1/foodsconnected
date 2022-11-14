@@ -13,8 +13,7 @@ public interface IUserContext
 }
 public class UserContext : DbContext, IUserContext
 {
-       protected override void OnConfiguring
-       (DbContextOptionsBuilder optionsBuilder)
+       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseInMemoryDatabase(databaseName: "AuthorDb");
         }
