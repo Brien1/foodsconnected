@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.6818000000000001" branch-rate="0.75" version="1.9" timestamp="1668435162" lines-covered="60" lines-valid="88" branches-covered="9" branches-valid="12">
+<coverage line-rate="0.6818000000000001" branch-rate="0.75" version="1.9" timestamp="1668456890" lines-covered="60" lines-valid="88" branches-covered="9" branches-valid="12">
   <sources>
     <source>/Users/brienhall/Documents/foodsconnected/UserApi/</source>
   </sources>

@@ -9,16 +9,25 @@ public class Program
         Console.WriteLine("############ ",args.ToString());
         // Display the number of command line arguments.
         var builder = WebApplication.CreateBuilder(args);
+        var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         builder.Services.AddControllers();
         builder.Services.AddDbContext<UserContext>();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-
+        builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins(
+                                              "http://localhost:5000").AllowAnyHeader().AllowAnyMethod();
+                      });
+});
         var app = builder.Build();
 
-        if (app.Environment.IsDevelopment())
-        {
+        // if (app.Environment.IsDevelopment())
+        // {
             app.UseSwagger(options =>
             {
                 options.SerializeAsV2 = true;
@@ -28,10 +37,13 @@ public class Program
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
                 options.RoutePrefix = string.Empty;
             });
-        }
+        // }
         app.UseHttpsRedirection();
+        app.UseRouting();
+        app.UseCors(MyAllowSpecificOrigins);
         app.UseAuthorization();
         app.MapControllers();
+
         return app;
     }
 
