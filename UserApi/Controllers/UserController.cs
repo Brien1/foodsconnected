@@ -46,11 +46,14 @@ namespace foods_connected_brien.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUser(long id, User user)
         {
-            if (id != user.userId)
+            var f = await _context.User.ToListAsync();
+            if (id != user.userId || f.Any((e)=>{return e.username.Equals(user.username) ;}))
             {
                 return BadRequest();
             }
+
             _context.Entry(user).State = EntityState.Modified;
+         
             try
             {
                 await _context.SaveChangesAsync();
@@ -61,10 +64,7 @@ namespace foods_connected_brien.Controllers
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
+               
             }
 
             return NoContent();
