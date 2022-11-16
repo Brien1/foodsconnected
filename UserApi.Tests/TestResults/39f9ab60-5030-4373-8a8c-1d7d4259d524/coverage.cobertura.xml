@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.7112999999999999" branch-rate="0.75" version="1.9" timestamp="1668619196" lines-covered="69" lines-valid="97" branches-covered="9" branches-valid="12">
+<coverage line-rate="0.83" branch-rate="0.9166" version="1.9" timestamp="1668621800" lines-covered="83" lines-valid="100" branches-covered="11" branches-valid="12">
   <sources>
     <source>/Users/brienhall/Documents/foodsconnected/UserApi/</source>
   </sources>
   <packages>
-    <package name="UserApi" line-rate="0.7112999999999999" branch-rate="0.75" complexity="23">
+    <package name="UserApi" line-rate="0.83" branch-rate="0.9166" complexity="23">
       <classes>
         <class name="UserApi.ProgramMain.Program" filename="Program.cs" line-rate="0.7105" branch-rate="1" complexity="2">
           <methods>
@@ -100,18 +100,18 @@
           <methods>
             <method name="get_userId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="19" branch="False" />
+                <line number="5" hits="18" branch="False" />
               </lines>
             </method>
             <method name="get_username" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="26" branch="False" />
+                <line number="6" hits="37" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="19" branch="False" />
-            <line number="6" hits="26" branch="False" />
+            <line number="5" hits="18" branch="False" />
+            <line number="6" hits="37" branch="False" />
           </lines>
         </class>
         <class name="TodoApi.Models.UserContext" filename="Models/UserContext.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -125,7 +125,7 @@
             </method>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="28" branch="False" />
+                <line number="21" hits="32" branch="False" />
               </lines>
             </method>
           </methods>
@@ -133,16 +133,16 @@
             <line number="17" hits="7" branch="False" />
             <line number="18" hits="7" branch="False" />
             <line number="19" hits="7" branch="False" />
-            <line number="21" hits="28" branch="False" />
+            <line number="21" hits="32" branch="False" />
           </lines>
         </class>
-        <class name="foods_connected_brien.Controllers.UserController" filename="Controllers/UserController.cs" line-rate="0.5714" branch-rate="1" complexity="2">
+        <class name="foods_connected_brien.Controllers.UserController" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="UserExists" signature="(System.Int64)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="UserExists" signature="(System.Int64)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="111" hits="0" branch="False" />
-                <line number="112" hits="0" branch="False" />
-                <line number="113" hits="0" branch="False" />
+                <line number="114" hits="2" branch="False" />
+                <line number="115" hits="2" branch="False" />
+                <line number="116" hits="2" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -155,9 +155,9 @@
             </method>
           </methods>
           <lines>
-            <line number="111" hits="0" branch="False" />
-            <line number="112" hits="0" branch="False" />
-            <line number="113" hits="0" branch="False" />
+            <line number="114" hits="2" branch="False" />
+            <line number="115" hits="2" branch="False" />
+            <line number="116" hits="2" branch="False" />
             <line number="18" hits="7" branch="False" />
             <line number="19" hits="7" branch="False" />
             <line number="20" hits="7" branch="False" />
@@ -168,60 +168,60 @@
           <methods>
             <method name="&lt;PutUser&gt;b__0" signature="(TodoApi.Models.User)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="50" hits="9" branch="False" />
+                <line number="50" hits="21" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="50" hits="9" branch="False" />
+            <line number="50" hits="21" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;&gt;c__DisplayClass5_0" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;PostUser&gt;b__0" signature="(TodoApi.Models.User)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="80" hits="21" branch="False" />
+                <line number="83" hits="33" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="80" hits="21" branch="False" />
+            <line number="83" hits="33" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;DeleteUser&gt;d__6" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="97" hits="2" branch="False" />
-                <line number="98" hits="2" branch="False" />
-                <line number="99" hits="2" branch="True" condition-coverage="100% (2/2)">
+                <line number="100" hits="2" branch="False" />
+                <line number="101" hits="2" branch="False" />
+                <line number="102" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="198" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="100" hits="1" branch="False" />
-                <line number="101" hits="1" branch="False" />
+                <line number="103" hits="1" branch="False" />
                 <line number="104" hits="1" branch="False" />
-                <line number="105" hits="1" branch="False" />
                 <line number="107" hits="1" branch="False" />
-                <line number="108" hits="2" branch="False" />
+                <line number="108" hits="1" branch="False" />
+                <line number="110" hits="1" branch="False" />
+                <line number="111" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="97" hits="2" branch="False" />
-            <line number="98" hits="2" branch="False" />
-            <line number="99" hits="2" branch="True" condition-coverage="100% (2/2)">
+            <line number="100" hits="2" branch="False" />
+            <line number="101" hits="2" branch="False" />
+            <line number="102" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="198" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="100" hits="1" branch="False" />
-            <line number="101" hits="1" branch="False" />
+            <line number="103" hits="1" branch="False" />
             <line number="104" hits="1" branch="False" />
-            <line number="105" hits="1" branch="False" />
             <line number="107" hits="1" branch="False" />
-            <line number="108" hits="2" branch="False" />
+            <line number="108" hits="1" branch="False" />
+            <line number="110" hits="1" branch="False" />
+            <line number="111" hits="2" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;GetUser&gt;d__2" filename="Controllers/UserController.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -244,110 +244,116 @@
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="33" hits="6" branch="False" />
-                <line number="34" hits="6" branch="False" />
-                <line number="36" hits="6" branch="True" condition-coverage="100% (2/2)">
+                <line number="33" hits="5" branch="False" />
+                <line number="34" hits="5" branch="False" />
+                <line number="36" hits="5" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="187" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="37" hits="1" branch="False" />
                 <line number="38" hits="1" branch="False" />
-                <line number="41" hits="5" branch="False" />
-                <line number="42" hits="6" branch="False" />
+                <line number="41" hits="4" branch="False" />
+                <line number="42" hits="5" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="33" hits="6" branch="False" />
-            <line number="34" hits="6" branch="False" />
-            <line number="36" hits="6" branch="True" condition-coverage="100% (2/2)">
+            <line number="33" hits="5" branch="False" />
+            <line number="34" hits="5" branch="False" />
+            <line number="36" hits="5" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="187" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="37" hits="1" branch="False" />
             <line number="38" hits="1" branch="False" />
-            <line number="41" hits="5" branch="False" />
-            <line number="42" hits="6" branch="False" />
+            <line number="41" hits="4" branch="False" />
+            <line number="42" hits="5" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;PostUser&gt;d__5" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="77" hits="6" branch="False" />
-                <line number="79" hits="6" branch="False" />
-                <line number="81" hits="3" branch="False" />
-                <line number="82" hits="3" branch="False" />
-                <line number="86" hits="3" branch="False" />
-                <line number="87" hits="3" branch="False" />
-                <line number="88" hits="3" branch="False" />
-                <line number="89" hits="3" branch="False" />
-                <line number="92" hits="6" branch="False" />
+                <line number="80" hits="6" branch="False" />
+                <line number="82" hits="6" branch="False" />
+                <line number="84" hits="2" branch="False" />
+                <line number="85" hits="2" branch="False" />
+                <line number="89" hits="4" branch="False" />
+                <line number="90" hits="4" branch="False" />
+                <line number="91" hits="4" branch="False" />
+                <line number="92" hits="4" branch="False" />
+                <line number="95" hits="6" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="77" hits="6" branch="False" />
-            <line number="79" hits="6" branch="False" />
-            <line number="81" hits="3" branch="False" />
-            <line number="82" hits="3" branch="False" />
-            <line number="86" hits="3" branch="False" />
-            <line number="87" hits="3" branch="False" />
-            <line number="88" hits="3" branch="False" />
-            <line number="89" hits="3" branch="False" />
-            <line number="92" hits="6" branch="False" />
+            <line number="80" hits="6" branch="False" />
+            <line number="82" hits="6" branch="False" />
+            <line number="84" hits="2" branch="False" />
+            <line number="85" hits="2" branch="False" />
+            <line number="89" hits="4" branch="False" />
+            <line number="90" hits="4" branch="False" />
+            <line number="91" hits="4" branch="False" />
+            <line number="92" hits="4" branch="False" />
+            <line number="95" hits="6" branch="False" />
           </lines>
         </class>
-        <class name="foods_connected_brien.Controllers.UserController/&lt;PutUser&gt;d__4" filename="Controllers/UserController.cs" line-rate="0.3125" branch-rate="0.5" complexity="6">
+        <class name="foods_connected_brien.Controllers.UserController/&lt;PutUser&gt;d__4" filename="Controllers/UserController.cs" line-rate="0.8421" branch-rate="0.8332999999999999" complexity="6">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.3125" branch-rate="0.5" complexity="6">
+            <method name="MoveNext" signature="()" line-rate="0.8421" branch-rate="0.8332999999999999" complexity="6">
               <lines>
                 <line number="48" hits="3" branch="False" />
                 <line number="49" hits="3" branch="False" />
-                <line number="51" hits="3" branch="False" />
-                <line number="52" hits="3" branch="False" />
-                <line number="55" hits="0" branch="False" />
-                <line number="58" hits="0" branch="False" />
-                <line number="59" hits="0" branch="False" />
-                <line number="60" hits="0" branch="False" />
-                <line number="61" hits="0" branch="False" />
-                <line number="62" hits="0" branch="False" />
-                <line number="63" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="54" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="470" type="jump" coverage="0%" />
+                    <condition number="297" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="64" hits="0" branch="False" />
-                <line number="65" hits="0" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="67" hits="0" branch="False" />
                 <line number="68" hits="0" branch="False" />
-                <line number="70" hits="0" branch="False" />
-                <line number="71" hits="3" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="48" hits="3" branch="False" />
             <line number="49" hits="3" branch="False" />
-            <line number="51" hits="3" branch="False" />
-            <line number="52" hits="3" branch="False" />
-            <line number="55" hits="0" branch="False" />
-            <line number="58" hits="0" branch="False" />
-            <line number="59" hits="0" branch="False" />
-            <line number="60" hits="0" branch="False" />
-            <line number="61" hits="0" branch="False" />
-            <line number="62" hits="0" branch="False" />
-            <line number="63" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="54" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="470" type="jump" coverage="0%" />
+                <condition number="297" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="64" hits="0" branch="False" />
-            <line number="65" hits="0" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="67" hits="0" branch="False" />
             <line number="68" hits="0" branch="False" />
-            <line number="70" hits="0" branch="False" />
-            <line number="71" hits="3" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="3" branch="False" />
           </lines>
         </class>
       </classes>
