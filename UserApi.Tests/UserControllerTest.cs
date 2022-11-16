@@ -65,35 +65,36 @@ namespace UserApiTest.UnitTests.User_Controller_Test
             var resp_data_insertion = await controller.PostUser(test_user);
             var resp_data_requested = controller.GetUser(userid);
             Assert.IsTrue(resp_data_requested.Result.Value.username.Equals("brien"));
-            User f = resp_data_requested.Result.Value;
-            f.username = "Dave";
-            var resp_user_updated = await controller.PutUser(userid, f);
+            // User f = resp_data_requested.Result.Value;
+            User f = new User();
+            f.userId = 2;
+            f.username = "Moody";
+            var resp_user_updated = await controller.PutUser(userid, "Moody");
             
-            resp_data_requested = controller.GetUser(userid);
-            Assert.IsTrue(resp_data_requested.Result.Value.username.Equals("Dave"));
+            
+            Assert.IsTrue(resp_user_updated.Value.username.Equals("Moody"));
 
         }
           [Test]
         public async Task test_alter_username_same_name_error()
         {
-            test_user.userId = 2;
+            test_user.userId = 4;
             long userid = test_user.userId;
             test_user.username = "brien";
             var resp_data_insertion = await controller.PostUser(test_user);
             var resp_data_requested = controller.GetUser(userid);
             Assert.IsTrue(resp_data_requested.Result.Value.username.Equals("brien"));
-            User f = resp_data_requested.Result.Value;
           
-            var resp_user_updated = await controller.PutUser(userid, f);
+            var resp_user_updated = await controller.PutUser(userid, "brien");
             
-            Assert.AreEqual(resp_user_updated.ToString(), "Microsoft.AspNetCore.Mvc.BadRequestResult" );
+            Assert.AreEqual(resp_user_updated.Result.ToString(), "Microsoft.AspNetCore.Mvc.BadRequestResult" );
 
         }
         [Test]
         public async Task test_deletion()
         { 
 
-            test_user.username = "dave";
+            test_user.username = "dotty";
             test_user.userId = 3;
             var resp_data_insertion = await controller.PostUser(test_user);
             var resp_data_requested = controller.GetUser(test_user.userId);
@@ -114,8 +115,8 @@ namespace UserApiTest.UnitTests.User_Controller_Test
         [Test]
         public async Task test_put_user_wrong_id() {
            
-            var resp_user_updated = await controller.PutUser(3, test_user);
-            Assert.AreEqual("Microsoft.AspNetCore.Mvc.BadRequestResult",resp_user_updated.ToString());
+            var resp_user_updated = await controller.PutUser(5555, "fff");
+            Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundResult",resp_user_updated.Result.ToString());
 
         }
      

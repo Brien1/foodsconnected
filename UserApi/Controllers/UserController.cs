@@ -44,30 +44,33 @@ namespace foods_connected_brien.Controllers
         // PUT: api/User/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(long id, User user)
+        public async Task<ActionResult<User>> PutUser(long id, String new_username)
         {
             var f = await _context.User.ToListAsync();
-            if (id != user.userId || f.Any((e)=>{return e.username.Equals(user.username) ;}))
+            if (id != id || f.Any((e)=>{return e.username.Equals(new_username) ;}))
             {
                 return BadRequest();
             }
+            if (!UserExists(id))
+            {
+                return NotFound();
+            }
+            User u = _context.User.Find(id);
+            u.username = new_username;
+            _context.User.Update(u);
+            _context.Entry(u).State = EntityState.Modified;
 
-            _context.Entry(user).State = EntityState.Modified;
-         
             try
             {
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
+            
                
             }
 
-            return NoContent();
+            return u;
         }
 
         // POST: api/User
