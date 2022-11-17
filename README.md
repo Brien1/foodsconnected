@@ -5,7 +5,8 @@ Application that creates an in memory database for:
 - Fetching all users
 - Putting new usernames on a specific ID 
 - Deleteing users by ID. 
-\n This uses a swagger interface to interact with the database.  Advantages over a traditional database on hard-disk or ssd storage devices is that an in-memory database has much faster access.
+
+This uses a swagger interface to interact with the database.  Advantages over a traditional database on hard-disk or ssd storage devices is that an in-memory database has much faster access.
 
 <h2>Running the application</h2>
 
