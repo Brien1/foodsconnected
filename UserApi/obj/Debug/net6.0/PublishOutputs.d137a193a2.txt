@@ -78,6 +78,7 @@
 /Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/publish/SQLitePCLRaw.nativelibrary.dll
 /Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/publish/SQLitePCLRaw.core.dll
 /Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/publish/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.Annotations.dll
 /Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.Swagger.dll
 /Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
