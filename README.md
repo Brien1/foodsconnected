@@ -28,6 +28,6 @@ Get request sent from postman
 <img src="/instructions/3.png" alt="Alt text" title="Optional title">
 Curl request sent from zsh terminal.
 
-
+<h2>Interactive Coverage report</h2>
 <img src="/instructions/4.png" alt="Alt text" title="Optional title">
 Coverage report created by ReportGenerator with clickable links to each individual file to see line by line coverage.</div>
