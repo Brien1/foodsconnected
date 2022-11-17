@@ -27,6 +27,7 @@ Creates a swagger UI on localhost port 5000 by default. The UI can be used to in
 <img align=top src="/instructions/3.png" alt="Alt text" title="Optional title">
 </div>
 Get request sent from postman
+
 Curl request sent from zsh terminal.
 
 <h2>Interactive Coverage report</h2>
