@@ -119,6 +119,23 @@ namespace UserApiTest.UnitTests.User_Controller_Test
             Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundResult",resp_user_updated.Result.ToString());
 
         }
+        [Test]
+        public async Task test_get_all_users() {
+
+            var users = await controller.GetUser();
+            var current_count = users.Value.Count<User>();
+            var u1 = new User();
+            var u2 = new User();
+            u1.userId = 101;
+            u2.userId = 102;
+            u1.username = "b";
+            u2.username = "bb";
+            controller.PostUser(u1);
+            controller.PostUser(u2);
+            users = await controller.GetUser();
+            Assert.True(users.Value.Count<User>()== current_count + 2);
+
+        }
      
     }
 }
