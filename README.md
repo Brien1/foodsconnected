@@ -17,7 +17,7 @@ Application that creates an in memory database for:
 
 <h2>The Swagger UI</h2>
 
-<img src="/instructions/ff.png" alt="Alt text" title="Optional title">
+<img src="/instructions/23.png" alt="Alt text" title="Optional title">
 Creates a swagger UI on localhost port 5000 by default. The UI can be used to interact with the database or copy and past CURL commands into an editor
 
 <h2>Accessing the API without the UI</h2>
