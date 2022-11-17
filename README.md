@@ -9,6 +9,9 @@ Application that creates an in memory database for:
 \n This uses a swagger interface to interact with the database.  Advantages over a traditional database on hard-disk or ssd storage devices is that an in-memory database has much faster access.
 
 <h2>Running the application</h2>
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
 1. Clone the repository
 2. Install DOTNET 6.0 https://dotnet.microsoft.com/en-us/download
 3. To run executable use run.sh
