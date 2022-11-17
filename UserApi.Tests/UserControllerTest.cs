@@ -52,7 +52,7 @@ namespace UserApiTest.UnitTests.User_Controller_Test
             var resp_data_insertion = await controller.PostUser(test_user.username);
             var resp_data_insertion_dubplicate = await controller.PostUser(test_user.username);
             var r = resp_data_insertion_dubplicate.Result.ToString();
-            Assert.AreEqual("Microsoft.AspNetCore.Mvc.BadRequestObjectResult", r);
+            Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundObjectResult", r);
 
         }
 
@@ -79,9 +79,9 @@ namespace UserApiTest.UnitTests.User_Controller_Test
             var resp_data_requested = controller.GetUser();
             Assert.AreEqual(resp_data_requested.Result.Value.Last().username , "brien");
           
-            var resp_user_updated = await controller.PutUser(userid, "brien");
+            var resp_user_updated = await controller.PutUser(resp_data_requested.Result.Value.Last().userId, "brien");
             
-            Assert.AreEqual(resp_user_updated.Result.ToString(), "Microsoft.AspNetCore.Mvc.BadRequestResult" );
+            Assert.AreEqual(resp_user_updated.Result.ToString(), "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" );
 
         }
         [Test]
@@ -116,7 +116,7 @@ namespace UserApiTest.UnitTests.User_Controller_Test
         public async Task test_put_user_wrong_id() {
            
             var resp_user_updated = await controller.PutUser(5555, "fff");
-            Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundResult",resp_user_updated.Result.ToString());
+            Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundObjectResult",resp_user_updated.Result.ToString());
 
         }
         [Test]

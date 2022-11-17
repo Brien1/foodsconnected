@@ -221,7 +221,7 @@ var assemblies = [
   {
     "name": "UserApi",
     "classes": [
-      { "name": "foods_connected_brien.Controllers.UserController", "rp": "UserApi_UserController.html", "cl": 50, "ucl": 3, "cal": 53, "tl": 127, "ct": "LineCoverage", "cbm": "-", "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [] },
+      { "name": "foods_connected_brien.Controllers.UserController", "rp": "UserApi_UserController.html", "cl": 50, "ucl": 3, "cal": 53, "tl": 137, "ct": "LineCoverage", "cbm": "-", "cb": 4, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [] },
       { "name": "TodoApi.Models.User", "rp": "UserApi_User.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 7, "ct": "LineCoverage", "cbm": "-", "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [] },
       { "name": "TodoApi.Models.UserContext", "rp": "UserApi_UserContext.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "cbm": "-", "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [] },
       { "name": "UserApi.ProgramMain.Program", "rp": "UserApi_Program.html", "cl": 34, "ucl": 13, "cal": 47, "tl": 69, "ct": "LineCoverage", "cbm": "-", "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [] },

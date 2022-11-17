@@ -42,16 +42,20 @@ namespace foods_connected_brien.Controllers
             Description = "Enters a new User into the database with parameters {userId: long, username: string} \n userId is the existing users ID, username is the new username being entered\n\n On success returns CreatedAction containing the details of the entry. \n Username cannot equal another users name else BadRequest is thrown",
             Tags = new[] { "Update username" }
         )]
+        [SwaggerResponse(400)]
+        [SwaggerResponse(200)]
+
+
         public async Task<ActionResult<User>> PutUser(long id, String new_username)
         {
             var f = await _context.User.ToListAsync();
-            if (id != id || f.Any((e) => { return e.username.Equals(new_username); }))
-            {
-                return BadRequest();
-            }
             if (!UserExists(id))
             {
-                return NotFound();
+                return NotFound("id doesn't exist");
+            }
+            if (id != id || f.Any((e) => { return e.username.Equals(new_username); }))
+            {
+                return BadRequest("username must be new and unique");
             }
             User u = _context.User.Find(id);
             u.username = new_username;
@@ -78,13 +82,16 @@ namespace foods_connected_brien.Controllers
             Description = "Enters a new User into the database with parameters {username: sting} \n\n On success returns CreatedAction containing the details of the entry. \n\n Username cannot equal another users name else BadRequest is thrown",
             Tags = new[] { "Insert User" }
         )]
+        [SwaggerResponse(201, "success")]
+        [SwaggerResponse(400, "username exists")]
+
         public async Task<ActionResult<User>> PostUser(string username)
         {
 
             var f = await _context.User.ToListAsync();
             if (f.Any((e) => { return e.username.Equals(username); }))
             {
-                return BadRequest("username exists");
+                return NotFound("username exists");
             }
 
             else
@@ -93,7 +100,7 @@ namespace foods_connected_brien.Controllers
                 nu.username = username;
                 _context.User.Add(nu);
                 await _context.SaveChangesAsync();
-                return CreatedAtAction("GetUser", new { id = nu.userId }, username);
+                return nu;
             }
 
         }
@@ -105,6 +112,9 @@ namespace foods_connected_brien.Controllers
             Description = "Removes a User from the database with parameters {id: userId} \n\n On success returns the deleted user User{userId: long, username: string}. \n\n If userId does not exist returns NotFound() warning",
             Tags = new[] { "Delete User" }
         )]
+        [SwaggerResponse(404)]
+        [SwaggerResponse(200)]
+
         public async Task<ActionResult<User>> DeleteUser(long id)
         {
             var user = await _context.User.FindAsync(id);
