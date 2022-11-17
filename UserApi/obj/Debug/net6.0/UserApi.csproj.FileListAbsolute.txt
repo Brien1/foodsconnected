@@ -298,3 +298,4 @@
 /Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/UserApi.pdb
 /Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/UserApi.genruntimeconfig.cache
 /Users/brienhall/Documents/foodsconnected/UserApi/obj/Debug/net6.0/ref/UserApi.dll
+/Users/brienhall/Documents/foodsconnected/UserApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Annotations.dll

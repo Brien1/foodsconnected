@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iF6UOsEV3ElwRb6xu4h39FZBKKj/egwyj4yyqF4BfTrJRps/EUn0JzKnaaMwdHzViVqaPVvx4mNQSMo9Tft7Gg==",
+  "dgSpecHash": "t8Hu75vjdXLAw+spMbJqXFk0Qtms/hQn6I9Pg3zssnJCZH2RCWJhz5jTeGfA+fjk2I+8nLG3Yd6Tm1udPY3yCw==",
   "success": true,
   "projectFilePath": "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj",
   "expectedPackageFiles": [
@@ -133,6 +133,7 @@
     "/Users/brienhall/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.4/sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "/Users/brienhall/.nuget/packages/swashbuckle.aspnetcore.annotations/6.4.0/swashbuckle.aspnetcore.annotations.6.4.0.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
