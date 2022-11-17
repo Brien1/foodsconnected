@@ -1,9 +1,8 @@
 <h1>In-Memory User Api</h1>
 
 Application that creates an in memory database for:
-- Storing users 
+- Storing users with userId and username
 - Fetching all users
-- Fetching user by ID
 - Putting new usernames on a specific ID 
 - Deleteing users by ID. 
 \n This uses a swagger interface to interact with the database.  Advantages over a traditional database on hard-disk or ssd storage devices is that an in-memory database has much faster access.
