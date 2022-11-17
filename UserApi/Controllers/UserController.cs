@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
@@ -20,7 +16,8 @@ namespace foods_connected_brien.Controllers
             _context = new UserContext();
         }
 
-        // GET: api/User
+
+
         [HttpGet]
         [SwaggerOperation(
             Summary = "Fetches list of users",
@@ -34,8 +31,6 @@ namespace foods_connected_brien.Controllers
 
 
 
-        // PUT: api/User/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         [SwaggerOperation(
             Summary = "Enters a new username onto an existing userID in the database",
@@ -44,23 +39,21 @@ namespace foods_connected_brien.Controllers
         )]
         [SwaggerResponse(400)]
         [SwaggerResponse(200)]
-
-
         public async Task<ActionResult<User>> PutUser(long id, String new_username)
         {
-            var f = await _context.User.ToListAsync();
+            var all_users = await _context.User.ToListAsync();
             if (!UserExists(id))
             {
                 return NotFound("id doesn't exist");
             }
-            if (id != id || f.Any((e) => { return e.username.Equals(new_username); }))
+            if (id != id || all_users.Any((e) => { return e.username.Equals(new_username); }))
             {
                 return BadRequest("username must be new and unique");
             }
-            User u = _context.User.Find(id);
-            u.username = new_username;
-            _context.User.Update(u);
-            _context.Entry(u).State = EntityState.Modified;
+            User existing_user = _context.User.Find(id);
+            existing_user.username = new_username;
+            _context.User.Update(existing_user);
+            _context.Entry(existing_user).State = EntityState.Modified;
 
             try
             {
@@ -72,8 +65,9 @@ namespace foods_connected_brien.Controllers
 
             }
 
-            return u;
+            return existing_user;
         }
+
 
 
         [HttpPost]
@@ -88,24 +82,25 @@ namespace foods_connected_brien.Controllers
         public async Task<ActionResult<User>> PostUser(string username)
         {
 
-            var f = await _context.User.ToListAsync();
-            if (f.Any((e) => { return e.username.Equals(username); }))
+            var all_users = await _context.User.ToListAsync();
+            if (all_users.Any((e) => { return e.username.Equals(username); }))
             {
                 return NotFound("username exists");
             }
 
             else
             {
-                var nu= new User();
-                nu.username = username;
-                _context.User.Add(nu);
+                var new_user= new User();
+                new_user.username = username;
+                _context.User.Add(new_user);
                 await _context.SaveChangesAsync();
-                return nu;
+                return new_user;
             }
 
         }
 
-        // DELETE: api/User/5
+
+
         [HttpDelete("{id}")]
         [SwaggerOperation(
             Summary = "Removes a User from the database",
@@ -122,11 +117,11 @@ namespace foods_connected_brien.Controllers
             {
                 return NotFound();
             }
-            var r = System.Text.Json.JsonSerializer.Serialize(user);
+            var user_details = System.Text.Json.JsonSerializer.Serialize(user);
             _context.User.Remove(user);
             await _context.SaveChangesAsync();
-            User f = System.Text.Json.JsonSerializer.Deserialize<User>(r);
-            return f;
+            User deleted_user = System.Text.Json.JsonSerializer.Deserialize<User>(user_details);
+            return deleted_user;
         }
 
         private bool UserExists(long id)

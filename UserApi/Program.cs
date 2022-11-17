@@ -1,13 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
 namespace UserApi.ProgramMain;
+/*
+Create application and run.
+
+*/
 public class Program
 {
 
     public static WebApplication create(String[]? args)
     {
 
-        Console.WriteLine("############ ", args.ToString());
+        Console.WriteLine("args :: ", args.ToString());
         // Display the number of command line arguments.
         var builder = WebApplication.CreateBuilder(args);
         var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
