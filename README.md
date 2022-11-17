@@ -1,6 +1,6 @@
 <h1>In-Memory User Api</h1>
 
-Application that creates an in memory database for storing users, getting all users, getting user by ID, putting new usernames on a specific ID and deleting users by ID. This uses a swagger interface to interact with the database.  Advantages over a traditional database on hard-disk or ssd storages is that an in-memory database has much faster access.
+Application that creates an in memory database for storing users, getting all users, getting user by ID, putting new usernames on a specific ID and deleting users by ID. This uses a swagger interface to interact with the database.  Advantages over a traditional database on hard-disk or ssd storage devices is that an in-memory database has much faster access.
 
 To run executable use run.sh
 To run tests and generate coverage report as html document with pages for each class. Use run_all_tests_with_coverage.sh in the UserApi.Tests directory. Then open the coverage_rendered directory and open the html page on localhost.
