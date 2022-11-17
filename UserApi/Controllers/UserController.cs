@@ -24,32 +24,15 @@ namespace foods_connected_brien.Controllers
         [HttpGet]
         [SwaggerOperation(
             Summary = "Fetches list of users",
-            Description = "Returns a list of users which may be empty if database is empty.\n",
-            Tags = new[] { "Fetch User" }
+            Description = "Returns a list of users ordered by userId which may be empty if database is empty.\n",
+            Tags = new[] { "Fetch Users" }
         )]
         public async Task<ActionResult<IEnumerable<User>>> GetUser()
         {
             return await _context.User.ToListAsync();
         }
 
-        // GET: api/User/5
-        [HttpGet("{id}")]
-        [SwaggerOperation(
-            Summary = "Fetches a specific User",
-            Description = "Fetch a User from the database with parameters {userId: long} \n\nReturns User{ userId: long, username: string}.\n\n If the userId does not exist returns NotFound() error ",
-            Tags = new[] { "Fetch User" }
-        )]
-        public async Task<ActionResult<User>> GetUser(long id)
-        {
-            var user = await _context.User.FindAsync(id);
 
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return user;
-        }
 
         // PUT: api/User/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -92,23 +75,25 @@ namespace foods_connected_brien.Controllers
         [HttpPost]
         [SwaggerOperation(
             Summary = "Enters a new User into the database",
-            Description = "Enters a new User into the database with parameters {user: User} \n\n On success returns CreatedAction containing the details of the entry. \n\n Username cannot equal another users name else BadRequest is thrown",
+            Description = "Enters a new User into the database with parameters {username: sting} \n\n On success returns CreatedAction containing the details of the entry. \n\n Username cannot equal another users name else BadRequest is thrown",
             Tags = new[] { "Insert User" }
         )]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult<User>> PostUser(string username)
         {
 
             var f = await _context.User.ToListAsync();
-            if (f.Any((e) => { return e.username.Equals(user.username); }))
+            if (f.Any((e) => { return e.username.Equals(username); }))
             {
                 return BadRequest("username exists");
             }
 
             else
             {
-                _context.User.Add(user);
+                var nu= new User();
+                nu.username = username;
+                _context.User.Add(nu);
                 await _context.SaveChangesAsync();
-                return CreatedAtAction("GetUser", new { id = user.userId }, user);
+                return CreatedAtAction("GetUser", new { id = nu.userId }, username);
             }
 
         }
