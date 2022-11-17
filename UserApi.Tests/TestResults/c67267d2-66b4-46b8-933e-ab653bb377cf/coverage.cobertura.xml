@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.83" branch-rate="0.9166" version="1.9" timestamp="1668621800" lines-covered="83" lines-valid="100" branches-covered="11" branches-valid="12">
+<coverage line-rate="0.8626999999999999" branch-rate="0.9166" version="1.9" timestamp="1668690075" lines-covered="88" lines-valid="102" branches-covered="11" branches-valid="12">
   <sources>
     <source>/Users/brienhall/Documents/foodsconnected/UserApi/</source>
   </sources>
   <packages>
-    <package name="UserApi" line-rate="0.83" branch-rate="0.9166" complexity="23">
+    <package name="UserApi" line-rate="0.8626999999999999" branch-rate="0.9166" complexity="23">
       <classes>
         <class name="UserApi.ProgramMain.Program" filename="Program.cs" line-rate="0.7105" branch-rate="1" complexity="2">
           <methods>
@@ -100,40 +100,40 @@
           <methods>
             <method name="get_userId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="18" branch="False" />
+                <line number="5" hits="24" branch="False" />
               </lines>
             </method>
             <method name="get_username" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="37" branch="False" />
+                <line number="6" hits="57" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="18" branch="False" />
-            <line number="6" hits="37" branch="False" />
+            <line number="5" hits="24" branch="False" />
+            <line number="6" hits="57" branch="False" />
           </lines>
         </class>
         <class name="TodoApi.Models.UserContext" filename="Models/UserContext.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="OnConfiguring" signature="(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="7" branch="False" />
-                <line number="18" hits="7" branch="False" />
-                <line number="19" hits="7" branch="False" />
+                <line number="17" hits="8" branch="False" />
+                <line number="18" hits="8" branch="False" />
+                <line number="19" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="32" branch="False" />
+                <line number="21" hits="39" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="7" branch="False" />
-            <line number="18" hits="7" branch="False" />
-            <line number="19" hits="7" branch="False" />
-            <line number="21" hits="32" branch="False" />
+            <line number="17" hits="8" branch="False" />
+            <line number="18" hits="8" branch="False" />
+            <line number="19" hits="8" branch="False" />
+            <line number="21" hits="39" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -147,10 +147,10 @@
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="7" branch="False" />
-                <line number="19" hits="7" branch="False" />
-                <line number="20" hits="7" branch="False" />
-                <line number="21" hits="7" branch="False" />
+                <line number="18" hits="8" branch="False" />
+                <line number="19" hits="8" branch="False" />
+                <line number="20" hits="8" branch="False" />
+                <line number="21" hits="8" branch="False" />
               </lines>
             </method>
           </methods>
@@ -158,34 +158,34 @@
             <line number="114" hits="2" branch="False" />
             <line number="115" hits="2" branch="False" />
             <line number="116" hits="2" branch="False" />
-            <line number="18" hits="7" branch="False" />
-            <line number="19" hits="7" branch="False" />
-            <line number="20" hits="7" branch="False" />
-            <line number="21" hits="7" branch="False" />
+            <line number="18" hits="8" branch="False" />
+            <line number="19" hits="8" branch="False" />
+            <line number="20" hits="8" branch="False" />
+            <line number="21" hits="8" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;&gt;c__DisplayClass4_0" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;PutUser&gt;b__0" signature="(TodoApi.Models.User)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="50" hits="21" branch="False" />
+                <line number="50" hits="27" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="50" hits="21" branch="False" />
+            <line number="50" hits="27" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;&gt;c__DisplayClass5_0" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;PostUser&gt;b__0" signature="(TodoApi.Models.User)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="83" hits="33" branch="False" />
+                <line number="83" hits="56" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="83" hits="33" branch="False" />
+            <line number="83" hits="56" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;DeleteUser&gt;d__6" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -201,8 +201,10 @@
                 </line>
                 <line number="103" hits="1" branch="False" />
                 <line number="104" hits="1" branch="False" />
+                <line number="106" hits="1" branch="False" />
                 <line number="107" hits="1" branch="False" />
                 <line number="108" hits="1" branch="False" />
+                <line number="109" hits="1" branch="False" />
                 <line number="110" hits="1" branch="False" />
                 <line number="111" hits="2" branch="False" />
               </lines>
@@ -218,26 +220,28 @@
             </line>
             <line number="103" hits="1" branch="False" />
             <line number="104" hits="1" branch="False" />
+            <line number="106" hits="1" branch="False" />
             <line number="107" hits="1" branch="False" />
             <line number="108" hits="1" branch="False" />
+            <line number="109" hits="1" branch="False" />
             <line number="110" hits="1" branch="False" />
             <line number="111" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="foods_connected_brien.Controllers.UserController/&lt;GetUser&gt;d__2" filename="Controllers/UserController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="foods_connected_brien.Controllers.UserController/&lt;GetUser&gt;d__2" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="False" />
-                <line number="28" hits="0" branch="False" />
+                <line number="26" hits="2" branch="False" />
+                <line number="27" hits="2" branch="False" />
+                <line number="28" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="False" />
-            <line number="28" hits="0" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="27" hits="2" branch="False" />
+            <line number="28" hits="2" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;GetUser&gt;d__3" filename="Controllers/UserController.cs" line-rate="1" branch-rate="1" complexity="2">
@@ -276,28 +280,28 @@
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="80" hits="6" branch="False" />
-                <line number="82" hits="6" branch="False" />
+                <line number="80" hits="8" branch="False" />
+                <line number="82" hits="8" branch="False" />
                 <line number="84" hits="2" branch="False" />
                 <line number="85" hits="2" branch="False" />
-                <line number="89" hits="4" branch="False" />
-                <line number="90" hits="4" branch="False" />
-                <line number="91" hits="4" branch="False" />
-                <line number="92" hits="4" branch="False" />
-                <line number="95" hits="6" branch="False" />
+                <line number="89" hits="6" branch="False" />
+                <line number="90" hits="6" branch="False" />
+                <line number="91" hits="6" branch="False" />
+                <line number="92" hits="6" branch="False" />
+                <line number="95" hits="8" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="80" hits="6" branch="False" />
-            <line number="82" hits="6" branch="False" />
+            <line number="80" hits="8" branch="False" />
+            <line number="82" hits="8" branch="False" />
             <line number="84" hits="2" branch="False" />
             <line number="85" hits="2" branch="False" />
-            <line number="89" hits="4" branch="False" />
-            <line number="90" hits="4" branch="False" />
-            <line number="91" hits="4" branch="False" />
-            <line number="92" hits="4" branch="False" />
-            <line number="95" hits="6" branch="False" />
+            <line number="89" hits="6" branch="False" />
+            <line number="90" hits="6" branch="False" />
+            <line number="91" hits="6" branch="False" />
+            <line number="92" hits="6" branch="False" />
+            <line number="95" hits="8" branch="False" />
           </lines>
         </class>
         <class name="foods_connected_brien.Controllers.UserController/&lt;PutUser&gt;d__4" filename="Controllers/UserController.cs" line-rate="0.8421" branch-rate="0.8332999999999999" complexity="6">

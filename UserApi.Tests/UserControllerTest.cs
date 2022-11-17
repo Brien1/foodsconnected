@@ -110,7 +110,7 @@ namespace UserApiTest.UnitTests.User_Controller_Test
         {
                         
             var resp = controller.DeleteUser(id_nonexistent_user);
-            Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundResult", resp.Result.ToString());
+            Assert.AreEqual("Microsoft.AspNetCore.Mvc.NotFoundResult", resp.Result.Result.ToString());
         }
         [Test]
         public async Task test_put_user_wrong_id() {

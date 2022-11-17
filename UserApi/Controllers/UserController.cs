@@ -12,7 +12,7 @@ namespace foods_connected_brien.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : ControllerBase, IUserController
     {
         private readonly UserContext _context;
         public UserController()
@@ -96,18 +96,18 @@ namespace foods_connected_brien.Controllers
 
         // DELETE: api/User/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(long id)
+        public async Task<ActionResult<User>> DeleteUser(long id)
         {
             var user = await _context.User.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
-
+            var r = System.Text.Json.JsonSerializer.Serialize(user);
             _context.User.Remove(user);
             await _context.SaveChangesAsync();
-
-            return NoContent();
+            User f = System.Text.Json.JsonSerializer.Deserialize<User>(r);
+            return f ;
         }
 
         private bool UserExists(long id)
