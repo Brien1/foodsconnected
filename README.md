@@ -20,12 +20,11 @@ Application that creates an in memory database for:
 Creates a swagger UI on localhost port 5000 by default. The UI can be used to interact with the database or copy and past CURL commands into an editor
 
 <h2>Accessing the API without the UI</h2>
-
-<img src="/instructions/2.png" alt="Alt text" title="Optional title">
+<div>
+<img align=top src="/instructions/2.png" alt="Alt text" title="Optional title">
+<img align=top src="/instructions/3.png" alt="Alt text" title="Optional title">
+<div>
 Get request sent from postman
-
-<div style="display: flex; flex-direction: horizontal">
-<img src="/instructions/3.png" alt="Alt text" title="Optional title">
 Curl request sent from zsh terminal.
 
 <h2>Interactive Coverage report</h2>
