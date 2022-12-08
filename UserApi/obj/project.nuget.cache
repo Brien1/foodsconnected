@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t8Hu75vjdXLAw+spMbJqXFk0Qtms/hQn6I9Pg3zssnJCZH2RCWJhz5jTeGfA+fjk2I+8nLG3Yd6Tm1udPY3yCw==",
+  "dgSpecHash": "dmbZ321hAaY93vLDPHhxMQJRRUckf0fK4p+JYJ28kDkxQb4+m8rATfsEO8GRGIcuyRdcSjKeK+WU8Uzt8n6a8A==",
   "success": true,
-  "projectFilePath": "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj",
+  "projectFilePath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj",
   "expectedPackageFiles": [
     "/Users/brienhall/.nuget/packages/elasticsearch.net/7.8.1/elasticsearch.net.7.8.1.nupkg.sha512",
     "/Users/brienhall/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

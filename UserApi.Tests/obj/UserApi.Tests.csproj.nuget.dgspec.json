@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brienhall/Documents/foodsconnected/UserApi.Tests/UserApi.Tests.csproj": {}
+    "/Users/brienhall/Documents/foodsconnected B HALL/UserApi.Tests/UserApi.Tests.csproj": {}
   },
   "projects": {
-    "/Users/brienhall/Documents/foodsconnected/UserApi.Tests/UserApi.Tests.csproj": {
+    "/Users/brienhall/Documents/foodsconnected B HALL/UserApi.Tests/UserApi.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brienhall/Documents/foodsconnected/UserApi.Tests/UserApi.Tests.csproj",
+        "projectUniqueName": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi.Tests/UserApi.Tests.csproj",
         "projectName": "UserApi.Tests",
-        "projectPath": "/Users/brienhall/Documents/foodsconnected/UserApi.Tests/UserApi.Tests.csproj",
+        "projectPath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi.Tests/UserApi.Tests.csproj",
         "packagesPath": "/Users/brienhall/.nuget/packages/",
-        "outputPath": "/Users/brienhall/Documents/foodsconnected/UserApi.Tests/obj/",
+        "outputPath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brienhall/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj": {
-                "projectPath": "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj"
+              "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj": {
+                "projectPath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj"
               }
             }
           }
@@ -107,14 +107,14 @@
         }
       }
     },
-    "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj": {
+    "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj",
+        "projectUniqueName": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj",
         "projectName": "UserApi",
-        "projectPath": "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj",
+        "projectPath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj",
         "packagesPath": "/Users/brienhall/.nuget/packages/",
-        "outputPath": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/",
+        "outputPath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brienhall/.nuget/NuGet/NuGet.Config"

@@ -11625,11 +11625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj",
+      "projectUniqueName": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj",
       "projectName": "UserApi",
-      "projectPath": "/Users/brienhall/Documents/foodsconnected/UserApi/UserApi.csproj",
+      "projectPath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/UserApi.csproj",
       "packagesPath": "/Users/brienhall/.nuget/packages/",
-      "outputPath": "/Users/brienhall/Documents/foodsconnected/UserApi/obj/",
+      "outputPath": "/Users/brienhall/Documents/foodsconnected B HALL/UserApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/brienhall/.nuget/NuGet/NuGet.Config"
